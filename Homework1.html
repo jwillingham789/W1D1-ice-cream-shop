@@ -3,119 +3,126 @@
 <head>
   <style>
   body {
-    background-color: rgb(255, 99, 99);
-    text-align: center;
-  }
+      background-color: rgb(255, 99, 99);
+      text-align: center;
+      }
   .logo {
-    border: 2px solid black;
-}
-  .box {
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-}
-  .title {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
+      border: 5px solid black;
+      background-size: cover;
 }
   table {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
+      background-color: white;
+      border-color: black;
+      border-width: 4px;
+      border-style: solid;
+      color: black;
+      border-collapse: collapse;
+      width: 75%;
+  }
+  thead {
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    font-size: 20px;
   }
 /*Sets the zebra table pattern*/
-  tr:nth-child(even) {
-    background-color: #abcc35;
-  }
+    tr:nth-child(even) {
+      background-color: #abcc35;
+    }
+    tbody tr:hover {
+      background: #f2b2b2;
+    }
+    td a {
+      display: block;
+    }
 /*Link hover color*/
-  a:hover {
+    a:hover {
       background-color: pink;
-  }
-  .address {
-    color: #abcc35;
-    font-family: fantasy;
-  }
-  /*.title {
-      color: #f2b2b2;
+    }
+    .address {
+      color: #abcc35;
+      font-family: fantasy;
+    }
+    .title {
+      color: white;
       font-family: sans-serif;
-      font: 20px;
-    }*/
+    }
     .slogan {
-      color: #f2b2b2;
+      color: white;
       font-family: sans-serif;
-      font: 14px;
     }
     .history {
       font-family: sans-serif;
       color: #abcc35;
     }
     .old_photo {
-      width: 200px;
+      width: 300px;
+      position: relative;
     }
   </style>
   <title>Jake's Ice Cream Shop &copy;</title>
-  <meta name="description" content="Best Ice Cream in the World!">
   <meta charset="utf-8">
+  <meta name="description" content="Best Ice Cream in the World!">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="main.css" />
-
 </head>
 <body>
     <main>
-      <img class = "logo" src="http://www-tc.pbs.org/food/files/2012/07/History-of-Ice-Cream-2.jpg">
-      <div class ="box">
-      <h1 class="title">Jake's Ice Cream Shop &copy;</h1>
-      </div>
-      <h/2 class="slogan">Best Ice Cream in the World!</h2>
-      <img class="old_photo" src="https://chuckmanplaces.files.wordpress.com/2011/08/photo-chicago-71st-street-and-bennett-beautiful-old-terra-cotta-building-saw-better-days-edited-from-lee-bey-photography.jpg">
+      <img class = "logo" alt="logo" src="http://www-tc.pbs.org/food/files/2012/07/History-of-Ice-Cream-2.jpg">
+      <h1 class="title">Jake's Ice Cream Shop</h1>
+      <h2 class="slogan">Best Ice Cream in the World!</h2>
+      <br />
+      <img class="old_photo" alt="old picture" src="https://chuckmanplaces.files.wordpress.com/2011/08/photo-chicago-71st-street-and-bennett-beautiful-old-terra-cotta-building-saw-better-days-edited-from-lee-bey-photography.jpg">
         <p class="history">
-          Jake's Ice Cream Shop was founded in 1989 by Jake Willingham. It is the birthplace of the Ultimate Sundae and continues to create magical ice cream flavors!
+          Jake's Ice Cream Shop was founded in Indianapolis, IN in 1989 by Jake Willingham. It is the birthplace of the Brownie Blast and continues to create magical ice cream flavors! We've been voted #1 Ice Cream Shop 20 years in row!
         </p>
         <p class = "pre_text">
           Check out our amazing flavors below!:
         </p>
+        <!-- Ice Cream Flavors -->
         <table>
             <thead>
                 <tr>
                     <th>Ice Cream Flavor</th>
                     <th>Calories</th>
-                    <th>Link to Wikipedia</th>
+                    <th>Fat-Free?</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Vanilla</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Vanilla_ice_cream">Vanilla</a></td>
                     <td>200</td>
-                    <td>....</td>
+                    <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>Chocolate</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</a></td>
                     <td>300</td>
-                    <td>....</td>
+                    <td>No</td>
                 </tr>
                 <tr>
-                    <td>Strawberry</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Strawberry_ice_cream">Strawberry</a></td>
                     <td>250</td>
-                    <td>....</td>
+                    <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>Key Lime Pie</td>
+                  <!-- There isn't a wiki for this, so it's just ice cream -->
+                    <td><a href="https://en.wikipedia.org/wiki/Ice_cream">Key Lime Pie</a></td>
                     <td>300</td>
-                    <td>....</td>
+                    <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>Mint Chocolate Chip</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Mint_chocolate_chip">Mint Chocolate Chip</a></td>
                     <td>300</td>
-                    <td>....</td>
+                    <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>Brownie Blast</td>
+                    <!-- There isn't a wiki for this, so it's just ice cream -->
+                    <td><a href="https://en.wikipedia.org/wiki/Ice_cream">Brownie Blast</a></td>
                     <td>400</td>
-                    <td>....</td>
+                    <td>Yes</td>
                 </tr>
             </tbody>
         </table>
